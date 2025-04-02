@@ -64,7 +64,7 @@ jobs:
         uses: medyagh/setup-minikube@@v0.0.16
         with:
           minikube-version: "v1.29.0"
-          kubernetes-version: "v1.0.0"
+          kubernetes-version: "1.0.0"
 
       - name: Try the cluster !
         run: kubectl get pods -A
