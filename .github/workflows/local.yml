@@ -60,13 +60,10 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Setup Minikube
-        uses: manusa/actions-setup-minikube@v2.7.1
-        with:
-          minikube version: 'v1.29.0'
-          kubernetes version: 'latest'
-          driver: docker
-          start args: '--driver=docker'
+      - name: Start minikube
+        uses: medyagh/setup-minikube@master
+      - name: Try the cluster !
+        run: kubectl get pods -A
 
       - name: Deploy to Minikube
         run: |
