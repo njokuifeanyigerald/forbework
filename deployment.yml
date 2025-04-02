@@ -1,14 +1,7 @@
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: fintech
-
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: fintech-app
-  namespace: fintech
   labels:
     app: fintech-app
 spec:
@@ -45,7 +38,6 @@ apiVersion: v1
 kind: Service
 metadata:
   name: fintech-app-service
-  namespace: fintech
 spec:
   selector:
     app: fintech-app
