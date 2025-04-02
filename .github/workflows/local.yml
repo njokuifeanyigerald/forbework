@@ -53,7 +53,7 @@ jobs:
 
   deploy:
     needs: build-and-scan
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     if: github.ref == 'refs/heads/master'
     steps:
       - name: Checkout Code
