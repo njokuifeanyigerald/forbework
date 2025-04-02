@@ -74,4 +74,4 @@ jobs:
           kubectl apply -f deployment.yml
 
       - name: Verify Deployment
-        run: kubectl rollout status deployment/fintech-app -n fintech
+        run: kubectl rollout status deployment/fintech-app -n default
