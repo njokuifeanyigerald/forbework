@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
       - name: fintech-app
-        # image: "{{IMAGE}}"
-        image: bopgeek/fintech-app:latest
+        image: "{{IMAGE}}"
+        # image: bopgeek/fintech-app:latest
         ports:
         - containerPort: 8000
         resources:
