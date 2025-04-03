@@ -3,4 +3,4 @@
  . tp github minikube
 
 
-2. I explained the usefulness of I Implement **IAC** in the file `IAC Explantion.md`
+2. I explained how I Implement **IAC** in the file `IAC Explantion.md`
