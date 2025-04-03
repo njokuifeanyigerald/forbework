@@ -1,5 +1,5 @@
 if I wanna create a Terraform or an IAC, I would start with modules, making sure that every resources I need is under a folder structure in the modules. Then I will link them up the enivironment, by referencing it in the environments(prod, staging and dev) as seen below. the variables(strings and numbers needed for it to work) will be inserted in the .tfvars
-
+```
 terraform/
 ├── modules/
 │   ├── ec2/
@@ -35,7 +35,7 @@ terraform/
         └── outputs.tf
         └── prod.tfvars
 
-
+```
 
 cd into the directory of the environment, create a "<name>.tfvars" file and type this command
 
