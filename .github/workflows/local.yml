@@ -87,6 +87,3 @@ jobs:
 
       - name: List all svc for debugging
         run: kubectl get svc -n default
-
-      - name: List minikube service
-        run: minikube service --all
